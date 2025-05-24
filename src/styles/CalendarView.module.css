@@ -1,0 +1,164 @@
+.calendarView {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.calendarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.monthYear {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.navArrows {
+  display: flex;
+  gap: 10px;
+}
+
+.navArrow {
+  background-color: var(--light-blue);
+  color: var(--primary-blue);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.calendarGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  text-align: center;
+}
+
+.dayName {
+  font-weight: 500;
+  color: var(--secondary-text-color);
+  font-size: 14px;
+}
+
+.dateCell {
+  padding: 8px 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-color);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.dateCell.pastMonth {
+  color: #ccc;
+}
+
+.dateCell.currentDay {
+  background-color: var(--primary-blue);
+  color: #fff;
+}
+
+.appointmentTimes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 5px;
+}
+
+.appointmentTime {
+  background-color: var(--light-blue);
+  color: var(--primary-blue);
+  font-size: 10px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.appointmentDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.appointmentCard {
+  background-color: var(--light-blue);
+  border-radius: 10px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: var(--primary-blue);
+  font-weight: 600;
+}
+
+.appointmentCardIcon {
+  font-size: 24px;
+}
+
+.appointmentCardInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.appointmentCardTitle {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.appointmentCardTime,
+.appointmentCardDoctor {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--primary-blue);
+}
+
+@media (max-width: 768px) {
+  .calendarView {
+    padding: 20px;
+  }
+
+  .monthYear {
+    font-size: 16px;
+  }
+
+  .dayName, .dateCell {
+    font-size: 12px;
+    padding: 6px 0;
+  }
+
+  .appointmentTime {
+    font-size: 8px;
+    padding: 2px 4px;
+  }
+
+  .appointmentCard {
+    padding: 12px 15px;
+  }
+
+  .appointmentCardTitle {
+    font-size: 14px;
+  }
+
+  .appointmentCardTime,
+  .appointmentCardDoctor {
+    font-size: 11px;
+  }
+}

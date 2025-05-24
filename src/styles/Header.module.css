@@ -1,0 +1,98 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: var(--sidebar-bg);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-blue);
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  background-color: var(--dashboard-bg);
+  border-radius: 8px;
+  padding: 8px 15px;
+  margin-left: 20px;
+  flex-grow: 1;
+  max-width: 400px;
+}
+
+.searchBar input {
+  border: none;
+  background: transparent;
+  outline: none;
+  margin-left: 10px;
+  font-size: 16px;
+  color: var(--text-color);
+  width: 100%;
+}
+
+.searchBar svg {
+  color: var(--secondary-text-color);
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.notificationIcon, .addButton {
+  background-color: var(--light-blue);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: var(--primary-blue);
+  font-size: 20px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.profileAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    padding: 15px 20px;
+  }
+  .searchBar {
+    order: 3;
+    flex-basis: 100%;
+    margin-top: 15px;
+    margin-left: 0;
+  }
+  .logo {
+    flex-grow: 1;
+  }
+  .userInfo {
+    margin-left: auto;
+  }
+}
+

@@ -1,0 +1,42 @@
+.cardsContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.cardDate {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.status {
+  display: inline-block;
+  margin-top: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.status.green {
+  background-color: #4caf50;
+}
+
+.status.yellow {
+  background-color: #ffeb3b;
+}
+
+.status.red {
+  background-color: #f44336;
+}

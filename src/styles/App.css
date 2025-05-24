@@ -1,0 +1,49 @@
+:root {
+  --primary-blue: #5a7dff;
+  --light-blue: #e0eaff;
+  --text-color: #333;
+  --secondary-text-color: #666;
+  --card-bg: #f9f9f9;
+  --sidebar-bg: #fff;
+  --dashboard-bg: #f5f8fd;
+ --border-color: #eee;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --healthy-color: #4CAF50;
+  --issue-color: #F44336;
+  --heart-top: 20%;
+  --heart-left: 50%;
+  --lungs-top: 28%;
+  --lungs-left: 50%;
+  --teeth-top: 10%;
+  --teeth-left: 50%;
+  --bone-top: 60%;
+  --bone-left: 50%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--dashboard-bg);
+}
+
+#root {
+  display: flex;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.layout-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  #root {
+    flex-direction: row;
+  }
+
+  .layout-container {
+    flex-direction: row;
+  }
+}
