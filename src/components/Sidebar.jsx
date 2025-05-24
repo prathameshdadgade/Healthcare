@@ -29,7 +29,7 @@ const Sidebar = () => {
             const IconComponent = iconComponents[link.icon];
             return (
               <li key={index} className={styles.navItem}>
-                <a href="#" className={`${styles.navLink} ${link.name === 'Dashboard' ? styles.active : ''}`}>
+                <a  className={`${styles.navLink} ${link.name === 'Dashboard' ? styles.active : ''}`}>
                   {IconComponent && <IconComponent />}
                   <span>{link.name}</span>
                 </a>
